@@ -2,8 +2,8 @@ clear all
 close all
 clc
 %%
-files_path_in = {'../Train_files/'}
-files_path_out = {'../Train_inputs/'}
+files_path_in = {'/mnt/rogerio/Mestrado/FaceSpoofing/Datasets/OULU_NPU/Train_files/'}
+files_path_out = {'/mnt/rogerio/Mestrado/FaceSpoofing/Datasets/OULU_NPU/Train_inputs/'}
 %%
 
 for i = 1:numel(files_path_in)
