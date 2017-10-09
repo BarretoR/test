@@ -24,18 +24,18 @@ function Faces = Extract_faces(file_vid, file_eye_pos)
         if iframe == 1
             
             face_detector.MinSize = [400 400];
-            face_detector.MaxSize = [800 800];
+            %face_detector.MaxSize = [800 800];
             temp = face_detector.step(frame);
             
             if ~isempty(temp)
                 
-                face_detector.MinSize = [temp(1,3)-70 temp(1,4)-70];
-                face_detector.MaxSize = [temp(1,3)+70 temp(1,4)+70];
+                face_detector.MinSize = [temp(1,3)-10 temp(1,4)-10];
+                %face_detector.MaxSize = [temp(1,3)+10 temp(1,4)+10];
                 
             end
         end
         
-        temp = face_detector.step(frame);
+        temp = face_detector.step(frame)
         
         if(~isempty(temp))
             
